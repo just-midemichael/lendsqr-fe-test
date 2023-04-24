@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work Sans");
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    z-index: 20;
+    background: #FFFFFF;
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+}
+
+.header .navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+.header .logo {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    height: 50px;
+}
+
+.header-component-wrapper {
+    display: flex;
+    min-width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.header-component-box {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 5px 10px;
+    overflow: hidden;
+}
+
+.hamburger-container {
+    width: 10%;
+    min-width: 40px;
+    display: none;
+    padding: 5px;
+}
+
+.logo-container {
+    width: 30%;
+    min-width: 320px;
+    padding: 5px 10px;
+}
+
+.search-container {
+    width: 100%;
+}
+
+.doc-bell-container {
+    width: 14%;
+    min-width: 100px;
+    justify-content: space-between;
+}
+
+.user-detail-container {
+    width: 20%;
+    min-width: 150px;
+    padding: 0 10px;
+    justify-content: space-around;
+}
+
+.user-detail-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doc-link {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #213F7D;
+}
+
+.user-name {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 19px;
+    color: #213F7D;
+}
+
+.drop-down-icon {
+    padding: 5px;
+}
+
+.user-dropdown-menu-container {
+    display: none;
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    right: 2.5%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    box-shadow: -1px 1px 3px rgba(128, 128, 128, 0.342);
+    border: 1px solid rgba(128, 128, 128, 0.099);
+}
+
+.user-dropdown-menu-container li {
+    list-style: none;
+    z-index: 2;
+    color: #213F7D;
+    font-family: "Work Sans";
+    font-size: 0.9rem;
+    display: flex;
+    margin: 3px 0;
+}
+
+.user-dropdown-menu-container .logout-button {
+    font-family: "Work Sans";
+    background-color: #39CDCC;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin: 5px 0 0 0;
+}
+
+.user-dropdown-menu-container .drop-angle {
+    position: absolute;
+    top: -7px;
+    right: 20px;
+    background-color: inherit;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    z-index: 1;
+    box-shadow: -1px -1px 2px rgba(128, 128, 128, 0.074);
+    border: 1px 1px 1px solid rgba(128, 128, 128, 0.342);
+}
+
+.user-detail-wrapper:hover .user-dropdown-menu-container {
+    display: inline;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        height: 75px;
+    }
+}
+@media (max-width: 760px) {
+    .header {
+        height: 70px;
+    }
+
+    .header-component-wrapper {
+        padding: 5px;
+    }
+
+    .hamburger-container {
+        display: flex;
+    }
+
+    .logo-container {
+        width: 100%;
+        min-width: 140px;
+    }
+
+    .search-container {
+        width: 15%;
+        min-width: 50px;
+        padding: 5px;
+    }
+
+    .doc-bell-container {
+        min-width: 40px;
+        justify-content: center;
+    }
+
+    .user-detail-container {
+        min-width: 50px;
+        justify-content: center;
+    }
+
+    .doc-link {
+        display: none;
+    }
+
+    .user-name {
+        display: none;
+    }
+
+    .drop-down-icon {
+        display: none;
+    }
+
+    .user-dropdown-menu-container {
+        right: 3%;
+        top: 60px;
+    }
+}
+@media (max-width: 350px) {
+    .header {
+        height: 65px;
+    }
+
+    .header-component-wrapper {
+        padding: 5px;
+    }
+
+    .search-container {
+        width: 0%;
+        min-width: 0%;
+    }
+
+    .doc-bell-container {
+        display: none;
+    }
+
+    .user-dropdown-menu-container {
+        right: 3%;
+        top: 58px;
+    }
+}

@@ -1,0 +1,252 @@
+@import url('https://fonts.cdnfonts.com/css/avenir-next-lt-pro');
+
+//Color
+$headerColor: #213F7D;
+$subHeaderColor: #545F7D;
+$formInputColor: #545F7D;
+$formFocusColor: #213F7D;
+$backgroundColor: #FFFFFF;
+$fogetPasswordColor: #39CDCC;
+$buttonColor: #39CDCC;
+$textColor: #FFFFFF;
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 80px;
+    padding: 0 20px;
+}
+
+.form-greeting-header {
+    font-family: 'Avenir Next LT Pro', sans-serif !important;
+    font-size: 3rem;
+    color: $headerColor;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: -0.04em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 447px;
+}
+.form-sub-header {
+    font-family: 'Avenir Next LT Pr', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: $subHeaderColor;
+    // border: 2px solid red;
+    margin: 5px 0;
+    width: 100%;
+    max-width: 447px;
+}
+
+.form-field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    max-width: 447px;
+    padding: 0;
+    margin: 30px 0 10px 0;
+    border: none;
+}
+
+.message-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    border: none;
+    border-radius: 5px;
+    height: fit-content;
+    min-height: 30px;
+    min-width: 100%;
+    max-width: 447px;
+
+    font-family: 'Avenir Next LT Pr', sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    color: $subHeaderColor;
+    opacity: 0.8;
+    transition: 1000ms ease;
+    margin: 0;
+    // border: 1px solid red;
+}
+.guide-message {
+    transform: translateY(15px);
+    font-weight: 400;
+}
+.validate-message {
+    opacity: 0;
+    color: red;
+    padding: 0;
+}
+
+.form input {
+    background: $backgroundColor;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+    height: 50px;
+    min-width: 100%;
+    max-width: 447px;
+    padding: 6px 20px;
+
+    font-family: 'Avenir Next LT Pr', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: $formInputColor;
+    opacity: 0.6;
+    transition: 600ms ease;
+    margin: 10px 0;
+}
+.form input:focus {
+    border: 2px solid #39CDCC;
+    outline: none;
+    color: $formFocusColor !important;
+   
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    // border: 2px solid red;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    max-height: 50px;
+    margin-bottom: 10px;
+}
+.password-visibility-toggle {
+    position: relative;
+    top: 0;
+    right: 60px;
+    font-family: 'Avenir Next LT Pr', sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $buttonColor;
+    // border: 2px solid black;
+    padding: 12px;
+    background: $backgroundColor;
+    cursor: pointer;
+}
+
+.forget-password-link {
+    font-family: 'Avenir Next LT Pr', sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $fogetPasswordColor;
+    text-align: start;
+    width: 100%;
+    max-width: 447px;
+    text-decoration: none;
+    z-index: 3;
+}
+
+.login-button {
+    background: $buttonColor;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 447px;
+    height: 48px;
+    border: 2px solid transparent;
+
+    font-family: 'Avenir Next LT Pr', sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $textColor;
+}
+
+@media (max-width: 1200px) {
+    .form {
+        margin: 0 0 0 40px;
+    }
+}
+@media (max-width: 1000px) {
+    .form {
+        margin: 0;
+    }
+    .form-greeting-header {
+        font-size: 35px;
+    }
+    .form-sub-header {
+        font-size: 15px;
+    }
+    .form-field-container {
+        margin: 30px 0 0;
+    }
+    .form input {
+        height: 45px;
+    }
+    .login-button {
+        height: 43px;
+    }
+}
+@media (max-width: 760px) {
+    .form {
+        width: 100%;
+        padding: 100px 40px 0;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .form-greeting-header {
+        min-width: 100%;
+    }
+    .form-sub-header {
+        min-width: 100%;
+    }
+    .form-field-container {
+        min-width: 100%;
+        margin-top: 5px;
+    }
+    .form input {
+        min-width: 100%;
+    }
+    .form .login-button {
+        min-width: 100%;
+
+    }
+}
+@media (max-width: 350px) {
+    .form {
+        padding: 100px 20px 0;
+    }
+    .form-greeting-header {
+        font-size: 34px;
+    }
+    .form-sub-header {
+        font-size: 14px;
+    }
+    .form-field-container {
+        min-width: 100%;
+    }
+    .form input {
+        width: 100%;
+        
+    }
+}

@@ -1,0 +1,15 @@
+.drop-down-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown-icon {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}

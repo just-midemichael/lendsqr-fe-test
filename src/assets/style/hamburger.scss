@@ -1,0 +1,46 @@
+//Color
+$headerColor: #213F7D;
+$subHeaderColor: #545F7D;
+$formInputColor: #545F7D;
+$formFocusColor: #213F7D;
+$backgroundColor: #FFFFFF;
+$fogetPasswordColor: #39CDCC;
+$buttonColor: #39CDCC;
+$textColor: #FFFFFF;
+
+
+.hamburger-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid red;
+    background-color: $backgroundColor;
+    gap: 3px;
+    width: 100%;
+    min-width: 35px;
+    height: 80%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.hamburger-wrapper .bar {
+    width: 20px;
+    height: 2.5px;
+    background-color: $headerColor;
+    border-radius: 5px;
+    transition: 600ms ease;
+}
+
+.hamburger-wrapper .toggle-bar:nth-child(2) {
+    opacity: 1;
+}
+.hamburger-wrapper .toggle-bar:nth-child(1) {
+    transform: rotate(-45deg) translateY(-2px) translateX(-5px);
+    width: 10px;
+    
+}
+.hamburger-wrapper .toggle-bar:nth-child(3) {
+    transform: rotate(45deg) translateY(2px) translateX(-5px);
+    width: 10px;
+}

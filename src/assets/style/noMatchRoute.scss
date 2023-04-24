@@ -1,0 +1,61 @@
+//Color
+$headerColor: #213F7D;
+$subHeaderColor: #545F7D;
+$formInputColor: #545F7D;
+$formFocusColor: #213F7D;
+$backgroundColor: #FFFFFF;
+$fogetPasswordColor: #39CDCC;
+$buttonColor: #39CDCC;
+$textColor: #FFFFFF;
+
+
+
+.no-match-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
+    background-color: black;
+    color: $textColor;
+    padding: 10px;
+    min-height: 40vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.no-match-container .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    // border: 2px solid gold;
+    height: 100%;
+    width: 100%;
+}
+.no-match-container img {
+    border: 0;
+    display: flex;
+    width: 100%;
+    max-width: 250px;
+    height: fit-content;
+    box-sizing: border-box; 
+}
+.no-match-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    background-color: $buttonColor;
+    min-height: 50px;
+    height: fit-content;
+    margin: 5px;
+    color: $subHeaderColor;
+    font-weight: 600;
+    border: none;
+}
+.no-match-container button:hover {
+    background-color: $buttonColor !important;
+}

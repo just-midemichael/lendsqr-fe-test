@@ -1,0 +1,28 @@
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 100%;
+    width: fit-content;
+}
+
+.avatar-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+@media (max-width: 760px) {
+    .avatar-image {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 350px) {
+    .avatar-image {
+        width: 35px;
+        height: 35px;
+    }
+}

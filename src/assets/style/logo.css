@@ -1,0 +1,38 @@
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    max-height: 46px;
+    line-height: inherit;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.logo {
+    width: 174px;
+    height: 36px;
+    vertical-align: middle;
+    border-style: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .logo {
+        max-width: 174px;
+        max-height: 36px;
+    }
+}
+@media (max-width: 760px) {
+    .logo {
+        max-width: 164px;
+        max-height: 35px;
+    }
+}
+@media (max-width: 350px) {
+    .logo {
+        max-width: 154px;
+        max-height: 34px;
+    }
+}

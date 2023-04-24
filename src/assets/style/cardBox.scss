@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css?family=Work Sans');
+
+//Color
+$menuColor: #213F7D;
+$menuLinkBeforeColor:#21407da8;
+$menuTitleColor: #545F7D;
+$backgroundColor: #FFFFFF;
+$background: #E5E5E5;
+$borderLeftColor: #39CDCC;
+$buttonColor: #39CDCC;
+$textColor: #FFFFFF;
+$activeLinkBackgroundColor: #39cdcd13;
+$topBorder: 1px solid #21407d28;
+
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 160px;
+    min-width: 240px;
+    min-height: 160px;
+    background-color: $backgroundColor;
+    padding: 25px 30px;
+
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    gap: 10px;
+    // border: 2px solid gold;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: $background;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.card-icon {
+    width: 21px;
+    height: 21px;
+    
+}
+
+.card-title {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #545F7D;
+}
+
+.card-digit {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #213F7D;
+}

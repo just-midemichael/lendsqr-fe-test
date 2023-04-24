@@ -1,0 +1,19 @@
+
+
+
+.arrow-down-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    padding: 5px 5px;
+    // border: 2px solid black;
+    cursor: pointer;
+}
+
+.arrowdown-icon {
+    width: 7.34px;
+    height: 4.15px;
+    cursor: pointer;
+}

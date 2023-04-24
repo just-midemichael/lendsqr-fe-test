@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css?family=Work Sans');
+
+//Color
+$headerColor: #213F7D;
+$subHeaderColor: #545F7D;
+$formInputColor: #545F7D;
+$formFocusColor: #213F7D;
+$backgroundColor: #FFFFFF;
+$fogetPasswordColor: #39CDCC;
+$buttonColor: #39CDCC;
+$textColor: #FFFFFF;
+$background: #E5E5E5;
+
+
+.page-body {
+    background-color: #E5E5E5;
+    width: 100%;
+}
+
+.page-main {
+    position: absolute;
+    display: flex;
+    top: 80px;
+    bottom: 0;
+    width: 100%;
+    max-width: 1800px;
+    background-color: $background;
+    // border: 2px solid blue;
+}
+
+.sidenav-back-layer {
+    width: 280px;
+    min-width: 280px;
+    min-height: 100%;
+    background-color: $backgroundColor;
+}
+
+.content-section {
+    width: 100%;
+    // border: 2px solid green;
+}
+
+@media (max-width: 1000px) {
+    .page-main {
+        top: 75px;
+    }
+}
+
+@media (max-width: 760px) {
+    .page-main {
+        top: 70px;
+    }
+    .sidenav-back-layer {
+        display: none;
+    }
+}
+@media (max-width: 350px) {
+    .page-main {
+        top: 65px;
+    }
+    .sidenav-back-layer {
+        display: none;
+    }
+}

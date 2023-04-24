@@ -1,0 +1,28 @@
+//Color
+
+
+
+.auth-nav {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 12;
+    padding: 2.5rem 0 0 5rem;
+    // border: 2px solid gold;
+}
+
+@media (max-width: 1000px) {
+    .auth-nav {
+        padding: 30px 0 0 40px; 
+    }
+}
+@media (max-width: 760px) {
+    .auth-nav {
+       padding: 30px 0 0 40px; 
+    }
+}
+@media (max-width: 350px) {
+    .auth-nav {
+       padding: 30px 0 0 20px; 
+    }
+}
