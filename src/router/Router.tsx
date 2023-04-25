@@ -13,7 +13,7 @@ const Router = () => {
   return (
     <>
         <Routes>
-            <Route path='lendsqr-fe-test/' element={<LoginPage/>} />
+            <Route path='lendsqr-fe-test' element={<LoginPage/>} />
             <Route path='*' element={<NoMatchRoute/>} />
 
 
