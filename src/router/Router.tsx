@@ -17,7 +17,7 @@ const Router = () => {
             <Route path='*' element={<NoMatchRoute/>} />
 
 
-              <Route path='dashboard' element={
+              <Route path='lendsqr-fe-test/dashboard' element={
                 <React.Suspense>
                   <RequiredAuth><LazyDashboard/></RequiredAuth>
                   </React.Suspense>}>
