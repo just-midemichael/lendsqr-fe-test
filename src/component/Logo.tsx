@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <>
         <a href='/' target='_blank' className='navbar-brand'>
-            <img src='./src/assets/logo.svg' alt='logo' className='logo'/>
+            <img src='src/assets/logo.svg' alt='logo' className='logo'/>
         </a>
     </>
   )
