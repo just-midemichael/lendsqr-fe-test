@@ -16,7 +16,7 @@ const LoginForm = () => {
 
 
   //Redirect to home page for login with ---> '/', only if path is not specified
-  const redirectPath = location.state?.path || '/dashboard/user';
+  const redirectPath = location.state?.path || 'dashboard/user';
   //-------------------ENDS---------------------->
 
 

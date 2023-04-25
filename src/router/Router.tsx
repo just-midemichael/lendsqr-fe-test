@@ -14,10 +14,8 @@ const Router = () => {
     <>
         <Routes>
             <Route path='lendsqr-fe-test' element={<LoginPage/>} />
-            <Route path='*' element={<NoMatchRoute/>} />
 
-
-              <Route path='lendsqr-fe-test/dashboard' element={
+            <Route path='lendsqr-fe-test/dashboard' element={
                 <React.Suspense>
                   <RequiredAuth><LazyDashboard/></RequiredAuth>
                   </React.Suspense>}>
@@ -28,6 +26,10 @@ const Router = () => {
                     <RequiredAuth><LazyUser/></RequiredAuth>
                     </React.Suspense>} />
               </Route>
+            <Route path='*' element={<NoMatchRoute/>} />
+
+
+              
 
               
           
