@@ -43,7 +43,7 @@ const NoMatchRoute = () => {
         <div className='content-wrapper'>
         <img src="https://cdn.rawgit.com/ahmedhosna95/upload/1731955f/sad404.svg" alt="404"/>
         <h3>🚫 Page Not Found</h3>
-        <button style={ButtonStyle} onClick={() => navigate('/', {replace: true})}>Go back to LendSqr</button>
+        <button style={ButtonStyle} onClick={() => navigate('lendsqr-fe-test/', {replace: true})}>Go back to LendSqr</button>
         </div>
       </div>
        
