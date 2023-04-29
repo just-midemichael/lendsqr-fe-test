@@ -1,0 +1,182 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+@import url('https://fonts.googleapis.com/css?family=Work Sans');
+
+//Color
+$menuColor: #213F7D;
+$menuLinkBeforeColor:#21407da8;
+$titleColor: #545F7D;
+$backgroundColor: #FFFFFF;
+$background: #E5E5E5;
+$borderLeftColor: #39CDCC;
+$buttonColor: #39CDCC;
+$textColor: #FFFFFF;
+$activeLinkBackgroundColor: #39cdcd13;
+$topBorder: 1px solid #21407d28;
+
+
+
+
+
+.filter-container {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 270px;
+    height: fit-content;
+    max-height: 400px;
+    top: 55px;
+    background: $backgroundColor;
+    border: 1px solid rgba(84, 95, 125, 0.14);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    gap: 5px;
+    z-index: 16;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 30px 0;
+    overflow: hidden;
+    text-transform: capitalize;
+    // border: 2px solid greenyellow;
+}
+.show-filter-box-container {
+    display: flex;
+}
+.filter-container label {
+    text-transform: capitalize;
+    // border: 2px solid red;
+    width: 100%;
+    max-width: 230px;
+}
+.filter-form {
+    // border: 1px solid red;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    overflow-x: hidden;
+}
+.filter-form::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+.filter-form::-webkit-scrollbar-track {
+    background-color: $backgroundColor;
+}
+.filter-form::-webkit-scrollbar-thumb {
+    background-color: $buttonColor;
+}
+
+
+.filter-container input, .filter-select, .phone-number-input-wrapper {
+    width: 100%;
+    max-width: 230px;
+    height: 40px;
+    min-height: 40px;
+    left: 378px;
+    top: 704px;
+
+    background: $backgroundColor;
+    opacity: 0.2;
+    border: 1px solid $menuColor;
+    border-radius: 8px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #545F7D;
+    opacity: 0.7;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.phone-number-input-wrapper {
+    display: flex;
+    align-items: center;
+}
+.phone-number-input-wrapper input {
+    border: none;
+    width: 100% !important;
+    min-height: 35px !important;
+    height: 35px;
+    // border: 2px solid red;
+    margin: 0;
+}
+
+
+
+
+
+
+
+.filter-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border: 2px solid gold;
+    width: 100%;
+    height: fit-content;
+    max-width: 230px;
+    padding: 5px 0;
+}
+.filter-button-container button {
+    width: 98px;
+    height: 40px;
+    left: 490px;
+    top: 1020px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.reset-button {
+    background-color: $backgroundColor;
+    border: 1px solid rgba(84, 95, 125, 0.14);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    color: $titleColor;
+    transition: 300ms ease;
+}
+.reset-button:hover {
+    background-color: #f0f0f0;
+}
+.filter-button {
+    background-color: $buttonColor;
+    border: 1px solid #39CDCC;
+    border-radius: 8px;
+    color: $textColor;
+}
+.filter-button:hover {
+    background-color: #33b6b6;
+}
+
+
+
+.filter-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background-image: url(../icon/selectArrowIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+}
+.filter-select option {
+    color: $titleColor;
+}

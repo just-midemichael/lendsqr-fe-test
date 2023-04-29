@@ -48,8 +48,10 @@ const ContextApiProvider = ({children}: ContextProviderProps) => {
   }
   SmallSearchBoxDisplayhandler
   
+  const [isOpen, setIsOpen] = useState(false)
   const [filterBox, setFilterBox] = useState('')
   const filterBoxDisplayhandler = () => {
+    setIsOpen(!isOpen)
     if(filterBox === '')
     {
       setFilterBox('show-filter-box-container')
@@ -59,7 +61,7 @@ const ContextApiProvider = ({children}: ContextProviderProps) => {
       setFilterBox('')
     }
   }
-  filterBoxDisplayhandler
+
 
 
   //MocApi Elements

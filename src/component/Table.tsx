@@ -1,7 +1,5 @@
 import React, { ReactNode, useEffect, useState } from 'react'
 import '../assets/style/userTable.css'
-import Axios from 'axios'
-import { userApiProps } from '../utils/user'
 import FilterIcon from './FilterIcon'
 import OptionIcon from './OptionIcon'
 import { useContextApi } from '../utils/ContextApi'
@@ -9,19 +7,16 @@ import NavigateLeft from './NavigateLeft'
 import NavigateRight from './NavigateRight'
 import { Link, NavLink } from 'react-router-dom'
 import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input'
+import FilterBox from './FilterBox'
 
 
 
 const Table = () => {
 
   const userData = useContextApi() 
-  const contextFilterBox = useContextApi()
 
   const [value, setValue] = useState()
-  const [tablePage, setTablePage] = useState(100)
-  const [userStatus, setuserStatus] = useState('')
-  const [organization, setOrganization] = useState('') 
+  const [tablePage, setTablePage] = useState(100) 
 
   const optionItem = [
     {value: 'Initial Value' , number: '100'},
@@ -34,32 +29,14 @@ const Table = () => {
     setTablePage(e.target.value)
   }
 
-  const statusItem = [
-    {value: 'Active', text: 'Active'},
-    {value: 'Inactive', text: 'Inactive'},
-    {value: 'Pending', text: 'Pending'},
-    {value: 'Blacklisted', text: 'Blacklisted'}
-  ]
-
-  const handleSelectStatus = (e: any) => {
-    setuserStatus(e.target.value)
-  }
-
-  const handleSelectOrganization = (e: any) => {
-    setOrganization(e.target.value)
-  }
- 
 
   const [currentPage, setCurrentPage] = useState(1)
   const recordsPerPage  = tablePage
   const lastIndex = currentPage * recordsPerPage
   const firstIndex = lastIndex - recordsPerPage
-  const records = userData.usersDetail.slice(firstIndex, lastIndex)
   const npage = Math.ceil(userData.usersDetail.length / recordsPerPage)
   const numbers = [...Array(npage + 1).keys()].slice(1)
 
-  
-  
   
   const previousePage = () => {
     if(currentPage !== firstIndex){
@@ -80,15 +57,6 @@ const Table = () => {
   //   return data.id.include(filter.toLowerCase())
   // })
 
-  const filterData = () => {
-    return userData.usersDetail.filter((item: any) => {
-      const usernameMatch = item.userName.toLowerCase().includes(filter.toLowerCase());
-      return usernameMatch
-
-    })
-  }
-  console.log()
-
   return (
     <div className='table-container'>
         <div className='table-content'>
@@ -97,57 +65,7 @@ const Table = () => {
             <thead className='table-head'>
               <tr>
                 <td>ORGANIZATION <FilterIcon/>
-                  <div className={`filter-container ${contextFilterBox.filterBox}`}>
-                    <form className='filter-form'>
-                      <label>Organization</label>
-                      <select className='filter-select' placeholder='Select' onChange={handleSelectOrganization}>
-                        <option selected disabled>Select</option>
-                        {userData.usersDetail.map((filterOrganization: any) => {
-                          return (
-                            <option key={filterOrganization.id} value=    {filterOrganization.orgName}>
-                              {filterOrganization.orgName}
-                            </option>
-                          )
-                        })}
-                      </select>
-
-                      <label>Username</label>
-                      <input type='text' placeholder='User' onChange={(e: any) => setFilter(e.target.value)}/>
-
-                      <label>Email</label>
-                      <input type='email' placeholder='Email'/>
-
-                      <label>Date</label>
-                      <input type="datetime" value='Date'/>
-
-                      <label>Phone Number</label>
-                      <span className='phone-number-input-wrapper'>
-                        <PhoneInput
-                          defaultCountry='NG'
-                          placeholder=""
-                          value={value}
-                          onChange={(e) =>setValue}/>
-                      </span>
-
-                      <label>Status</label>
-                      <select className='filter-select' placeholder='Select' onChange={handleSelectStatus}>
-                        <option selected disabled>Select</option>
-                        
-                        {statusItem.map((status) => {
-                        return(
-                          <option key={status.value} value={status.value}>
-                            {status.text}
-                          </option>
-                        ) 
-                        })}
-                      </select>
-
-                      <div className='filter-button-container'>
-                        <button className='reset-button'>Reset</button>
-                        <button className='filter-button'>Filter</button>
-                      </div>
-                    </form>
-                  </div>
+                  <FilterBox/>
                 </td>
                 <td>USERNAME <FilterIcon/></td>
                 <td>EMAIL <FilterIcon/></td>
