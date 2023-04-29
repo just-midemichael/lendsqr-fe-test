@@ -12,6 +12,7 @@
     height: 40px;
     border-radius: 100%;
     cursor: pointer;
+    background-color: #302f2f;
 }
 
 @media (max-width: 760px) {

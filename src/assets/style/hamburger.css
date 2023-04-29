@@ -6,8 +6,8 @@
     background-color: #FFFFFF;
     gap: 3px;
     width: 100%;
-    min-width: 35px;
-    height: 80%;
+    min-width: 40px;
+    min-height: 40px;
     padding: 5px;
     cursor: pointer;
 }

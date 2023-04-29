@@ -97,53 +97,55 @@ const Table = () => {
               <tr>
                 <td>ORGANIZATION <FilterIcon/>
                   <div className='filter-container'>
-                    <label>Organization</label>
-                    <select className='filter-select' placeholder='Select' onChange={handleSelectOrganization}>
-                      <option selected disabled>Select</option>
-                      {userData.usersDetail.map((filterOrganization: any) => {
-                        return (
-                          <option key={filterOrganization.id} value=    {filterOrganization.orgName}>
-                            {filterOrganization.orgName}
+                    <form className='filter-form'>
+                      <label>Organization</label>
+                      <select className='filter-select' placeholder='Select' onChange={handleSelectOrganization}>
+                        <option selected disabled>Select</option>
+                        {userData.usersDetail.map((filterOrganization: any) => {
+                          return (
+                            <option key={filterOrganization.id} value=    {filterOrganization.orgName}>
+                              {filterOrganization.orgName}
+                            </option>
+                          )
+                        })}
+                      </select>
+
+                      <label>Username</label>
+                      <input type='text' placeholder='User' onChange={(e: any) => setFilter(e.target.value)}/>
+
+                      <label>Email</label>
+                      <input type='email' placeholder='Email'/>
+
+                      <label>Date</label>
+                      <input type="datetime" value='Date'/>
+
+                      <label>Phone Number</label>
+                      <span className='phone-number-input-wrapper'>
+                        <PhoneInput
+                          defaultCountry='NG'
+                          placeholder=""
+                          value={value}
+                          onChange={(e) =>setValue}/>
+                      </span>
+
+                      <label>Status</label>
+                      <select className='filter-select' placeholder='Select' onChange={handleSelectStatus}>
+                        <option selected disabled>Select</option>
+                        
+                        {statusItem.map((status) => {
+                        return(
+                          <option key={status.value} value={status.value}>
+                            {status.text}
                           </option>
-                        )
-                      })}
-                    </select>
+                        ) 
+                        })}
+                      </select>
 
-                    <label>Username</label>
-                    <input type='text' placeholder='User' onChange={(e: any) => setFilter(e.target.value)}/>
-
-                    <label>Email</label>
-                    <input type='email' placeholder='Email'/>
-
-                    <label>Date</label>
-                    <input type="datetime" value='Date'/>
-
-                    <label>Phone Number</label>
-                    <span className='phone-number-input-wrapper'>
-                      <PhoneInput
-                        defaultCountry='NG'
-                        placeholder=""
-                        value={value}
-                        onChange={(e) =>setValue}/>
-                    </span>
-
-                    <label>Status</label>
-                    <select className='filter-select' placeholder='Select' onChange={handleSelectStatus}>
-                      <option selected disabled>Select</option>
-                      
-                      {statusItem.map((status) => {
-                       return(
-                        <option key={status.value} value={status.value}>
-                          {status.text}
-                        </option>
-                       ) 
-                      })}
-                    </select>
-
-                    <div className='filter-button-container'>
-                      <button className='reset-button'>Reset</button>
-                      <button className='filter-button'>Filter</button>
-                    </div>
+                      <div className='filter-button-container'>
+                        <button className='reset-button'>Reset</button>
+                        <button className='filter-button'>Filter</button>
+                      </div>
+                    </form>
                   </div>
                 </td>
                 <td>USERNAME <FilterIcon/></td>

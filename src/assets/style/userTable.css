@@ -364,6 +364,12 @@ td:nth-child(4), td:nth-child(5), td:nth-child(6) {
     max-width: 230px;
 }
 
+.filter-form {
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+}
+
 .filter-container input, .filter-select, .phone-number-input-wrapper {
     width: 100%;
     max-width: 230px;
