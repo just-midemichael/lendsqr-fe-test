@@ -4,6 +4,7 @@ import { useContextApi } from '../utils/ContextApi'
 import {useNavigate} from 'react-router-dom'
 import CardBox from '../component/CardBox'
 import Table from '../component/Table'
+import FilterBox from '../component/FilterBox'
 
 const UserPage = () => {
   // This method changes page title
@@ -93,6 +94,7 @@ const UserPage = () => {
         
         <div className='table-wrapper'>
           <Table/>
+          <FilterBox/>
         </div>
         
       </section>

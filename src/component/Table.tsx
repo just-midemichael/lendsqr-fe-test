@@ -64,9 +64,7 @@ const Table = () => {
           <table>
             <thead className='table-head'>
               <tr>
-                <td>ORGANIZATION <FilterIcon/>
-                  <FilterBox/>
-                </td>
+                <td>ORGANIZATION <FilterIcon/></td>
                 <td>USERNAME <FilterIcon/></td>
                 <td>EMAIL <FilterIcon/></td>
                 <td>PHONE NUMBER <FilterIcon/></td>

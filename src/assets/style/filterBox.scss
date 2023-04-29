@@ -19,6 +19,8 @@ $topBorder: 1px solid #21407d28;
 
 .filter-container {
     position: absolute;
+    top: 55px;
+    left: 30px;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -27,7 +29,6 @@ $topBorder: 1px solid #21407d28;
     max-width: 270px;
     height: fit-content;
     max-height: 400px;
-    top: 55px;
     background: $backgroundColor;
     border: 1px solid rgba(84, 95, 125, 0.14);
     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
