@@ -99,10 +99,10 @@ td:nth-child(4), td:nth-child(5), td:nth-child(6) {
 }
 thead td:last-child {
     justify-content: center;
-    width: 0px;
+    width: 70px;
     position: sticky;
     right: -1px;
-    background-color: $backgroundColor;
+    background-color: transparent;
 }
 
 
