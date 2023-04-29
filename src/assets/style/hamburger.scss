@@ -36,11 +36,11 @@ $textColor: #FFFFFF;
     opacity: 1;
 }
 .hamburger-wrapper .toggle-bar:nth-child(1) {
-    transform: rotate(-45deg) translateY(-2px) translateX(-5px);
+    transform: rotate(-45deg) translateY(-2.5px) translateX(-4px);
     width: 10px;
     
 }
 .hamburger-wrapper .toggle-bar:nth-child(3) {
-    transform: rotate(45deg) translateY(2px) translateX(-5px);
+    transform: rotate(45deg) translateY(2.5px) translateX(-4px);
     width: 10px;
 }
