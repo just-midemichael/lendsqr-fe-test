@@ -115,6 +115,9 @@
 }
 
 .password-visibility-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     top: 0;
     right: 70px;
@@ -128,6 +131,7 @@
     text-transform: uppercase;
     color: #39CDCC;
     padding: 12px;
+    min-width: 65px;
     background: #FFFFFF;
     cursor: pointer;
 }

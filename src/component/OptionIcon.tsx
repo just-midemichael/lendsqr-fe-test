@@ -4,7 +4,7 @@ import '../assets/style/optionIcon.css'
 const OptionIcon = () => {
   return (
     <>
-      <img src='../src/assets/icon/optionIcon.svg' alt='option' className='option-icon'/>
+      <img src='../icon/optionIcon.svg' alt='option' className='option-icon'/>
       
     </>
   )

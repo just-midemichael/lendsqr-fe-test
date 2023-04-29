@@ -22,7 +22,7 @@ const LoginPage = () => {
         <NavBar/>
         <main className='auth'>
             <div className='auth-illustration'>
-                <img src='../../src/assets/image/pablo-sign-in.svg' alt='pablo-sign-in'/>
+                <img src='image/pablo-sign-in.svg' alt='pablo-sign-in'/>
             </div>
 
             <div className='auth-form'>

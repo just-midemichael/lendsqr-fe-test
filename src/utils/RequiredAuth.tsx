@@ -8,7 +8,7 @@ const RequiredAuth = ({children}: {children: ReactNode}) => {
     const Location = useLocation()
   
     if(!auth.user)
-        return <Navigate to={'/lendsqr-fe-test'} 
+        return <Navigate to={'/'} 
         state={{ path: location.pathname}}/>
     return (
     <div>{children}</div>

@@ -5,7 +5,7 @@ const UserAvatar = () => {
   return (
     <>
         <div className='avatar-container'>
-            <img className='avatar-image' src='../../src/assets/image/avatar-image.svg' alt='avatar' title='Guest'/>
+            <img className='avatar-image' src='../image/avatar-image.svg' alt='avatar' title='Guest'/>
         </div>
     </>
   )

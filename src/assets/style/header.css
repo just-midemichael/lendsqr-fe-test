@@ -43,8 +43,11 @@
 }
 
 .hamburger-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 10%;
-    min-width: 40px;
+    min-width: 45px;
     display: none;
     padding: 5px;
 }

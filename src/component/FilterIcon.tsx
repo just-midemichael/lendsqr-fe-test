@@ -3,7 +3,7 @@ import '../assets/style/filterIcon.css'
 
 const FilterIcon = () => {
   return (
-    <img src='../src/assets/icon/filterButtonIcon.svg' alt='filter' className='filter-icon'/>
+    <img src='../icon/filterButtonIcon.svg' alt='filter' className='filter-icon'/>
   )
 }
 

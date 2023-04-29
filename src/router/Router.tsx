@@ -13,9 +13,9 @@ const Router = () => {
   return (
     <>
         <Routes>
-            <Route path='lendsqr-fe-test' element={<LoginPage/>} />
+            <Route path='/' element={<LoginPage/>} />
 
-            <Route path='lendsqr-fe-test/dashboard' element={
+            <Route path='dashboard' element={
                 <React.Suspense>
                   <RequiredAuth><LazyDashboard/></RequiredAuth>
                   </React.Suspense>}>

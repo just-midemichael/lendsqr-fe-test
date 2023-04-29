@@ -45,13 +45,13 @@ const SideNavigationBar = () => {
         <div className='menu-container'>
 
           <li className='switch-organization link'>
-            <img className='menu-icon' src='../../src/assets/icon/briefcaseIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/briefcaseIcon.svg' alt='icon' />
             Switch Organization 
             <ArrowdownIcon/>
           </li>
 
           <li className='dashboard link'>
-            <img className='menu-icon' src='../../src/assets/icon/homeIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/homeIcon.svg' alt='icon' />
             Dashboard 
           </li>
 
@@ -61,42 +61,42 @@ const SideNavigationBar = () => {
           </li>
 
           <NavLink to='/dashboard/user' className='menu-link link ' style={activeStyle}>
-            <img className='menu-icon' src='../../src/assets/icon/userIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/userIcon.svg' alt='icon' />
             User 
           </NavLink>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/guarantorIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/guarantorIcon.svg' alt='icon' />
             Guarantors 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/loanIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/loanIcon.svg' alt='icon' />
             Loans 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/decisionModelIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/decisionModelIcon.svg' alt='icon' />
             Decison Models 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/savingsIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/savingsIcon.svg' alt='icon' />
             Savings 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/loanRequestIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/loanRequestIcon.svg' alt='icon' />
             Loan Request 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/whitelistIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/whitelistIcon.svg' alt='icon' />
             Whitelist 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/karmaIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/karmaIcon.svg' alt='icon' />
             Karma 
           </li>{/* Ends */}
 
@@ -107,47 +107,47 @@ const SideNavigationBar = () => {
             <span className='menu-title'>Business</span>
           </li>
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/organizationIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/organizationIcon.svg' alt='icon' />
             Organization 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/loanProductsIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/loanProductsIcon.svg' alt='icon' />
             Loan Products 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/savingsProductsIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/savingsProductsIcon.svg' alt='icon' />
             Savings Products 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/feesChargesIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/feesChargesIcon.svg' alt='icon' />
             Fees and Charges 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/transactionsIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/transactionsIcon.svg' alt='icon' />
             Transactions 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/servicesIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/servicesIcon.svg' alt='icon' />
             Services 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/serviceAccountIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/serviceAccountIcon.svg' alt='icon' />
             Service Account 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/settlementsIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/settlementsIcon.svg' alt='icon' />
             Settlements 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/reportsIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/reportsIcon.svg' alt='icon' />
             Reports 
           </li>{/* Ends */}
 
@@ -159,22 +159,22 @@ const SideNavigationBar = () => {
             <span className='menu-title'>Settings</span>
           </li>
           <li className='menu-link link'>
-            <img className='menu-icon' src='../../src/assets/icon/preferencesIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/preferencesIcon.svg' alt='icon' />
             Preferences 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/feesPricingIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/feesPricingIcon.svg' alt='icon' />
             Fees and Pricing
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/auditLogsIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/auditLogsIcon.svg' alt='icon' />
             Audit Logs 
           </li>
 
           <li className='menu-link link '>
-            <img className='menu-icon' src='../../src/assets/icon/systemsMessagesIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/systemsMessagesIcon.svg' alt='icon' />
             Systems Messages 
           </li>{/* Ends */}
         </div>
@@ -182,7 +182,7 @@ const SideNavigationBar = () => {
         {/* side nav footer */}
         <div className='nav-footer-container'>
           <li className='menu-link link log-out' onClick={handleLogout}>
-            <img className='menu-icon' src='../../src/assets/icon/logOutIcon.svg' alt='icon' />
+            <img className='menu-icon' src='../icon/logOutIcon.svg' alt='icon' />
             {logout}
           </li>
           
