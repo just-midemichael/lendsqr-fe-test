@@ -99,8 +99,7 @@ td:nth-child(4), td:nth-child(5), td:nth-child(6) {
 }
 thead td:last-child {
     justify-content: center;
-    width: 50px;
-    max-width: 50px !important;
+    width: 0px;
     position: sticky;
     right: -1px;
     background-color: $backgroundColor;
@@ -144,11 +143,11 @@ td:nth-child(4), td:nth-child(5), td:nth-child(6) {
 }
 tbody td:last-child {
     justify-content: center;
-    width: 50px;
-    max-width: 50px;
+    width: 70px;
     position: sticky;
     right: -1px;
     background-color: $backgroundColor;
+    // border: 2px solid red;
 }
 
 
