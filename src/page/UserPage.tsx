@@ -23,7 +23,7 @@ const UserPage = () => {
     cardDigit.forEach((userNumber: {
       textContent: number; getAttribute: (arg0: string) => string }) => {
       let dataValue = parseInt(userNumber.getAttribute('data-val'))
-      let startValue = dataValue - 200;
+      let startValue = dataValue - 100;
       let endValue = dataValue
       let duration = Math.floor(Interval/endValue)
 
