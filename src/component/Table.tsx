@@ -16,6 +16,7 @@ import PhoneInput from 'react-phone-number-input'
 const Table = () => {
 
   const userData = useContextApi() 
+  const contextFilterBox = useContextApi()
 
   const [value, setValue] = useState()
   const [tablePage, setTablePage] = useState(100)
@@ -96,7 +97,7 @@ const Table = () => {
             <thead className='table-head'>
               <tr>
                 <td>ORGANIZATION <FilterIcon/>
-                  <div className='filter-container'>
+                  <div className={`filter-container ${contextFilterBox.filterBox}`}>
                     <form className='filter-form'>
                       <label>Organization</label>
                       <select className='filter-select' placeholder='Select' onChange={handleSelectOrganization}>

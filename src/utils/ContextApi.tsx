@@ -36,7 +36,6 @@ const ContextApiProvider = ({children}: ContextProviderProps) => {
 
 
   const [smallSearchBox, setSmallSearchBox] = useState('')
-
   const SmallSearchBoxDisplayhandler = () => {
     if(smallSearchBox === '')
     {
@@ -49,6 +48,20 @@ const ContextApiProvider = ({children}: ContextProviderProps) => {
   }
   SmallSearchBoxDisplayhandler
   
+  const [filterBox, setFilterBox] = useState('')
+  const filterBoxDisplayhandler = () => {
+    if(filterBox === '')
+    {
+      setFilterBox('show-filter-box-container')
+    }
+    else
+    {
+      setFilterBox('')
+    }
+  }
+  filterBoxDisplayhandler
+
+
   //MocApi Elements
   const [usersDetail, setUsersDetail] = useState([])
   const [loading, setLoading] = useState(true)
@@ -74,7 +87,7 @@ const ContextApiProvider = ({children}: ContextProviderProps) => {
 
 
   return (
-    <allContext.Provider value={{user, username, sideNav, toggleBar, smallSearchBox, usersDetail, loading, error, login, logout, sideNavDisplayHandler, SmallSearchBoxDisplayhandler}}>
+    <allContext.Provider value={{user, username, sideNav, toggleBar, smallSearchBox, filterBox, usersDetail, loading, error, login, logout, sideNavDisplayHandler, SmallSearchBoxDisplayhandler, filterBoxDisplayhandler}}>
       {children}
     </allContext.Provider>
   )

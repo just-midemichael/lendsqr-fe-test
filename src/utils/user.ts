@@ -22,7 +22,11 @@ export type AllContextType = {
 
     smallSearchBox?: string | undefined
     setSmallSearchBox?: React.Dispatch<React.SetStateAction< | null>>
-    SmallSearchBoxDisplayhandler: any
+    SmallSearchBoxDisplayhandler?: any
+
+    filterBox?: string | undefined
+    setFilterBox?: React.Dispatch<React.SetStateAction< | null>>
+    filterBoxDisplayhandler?: any
 
     usersDetail?: any
     setUsersDetail?: React.Dispatch<React.SetStateAction< | null>>
